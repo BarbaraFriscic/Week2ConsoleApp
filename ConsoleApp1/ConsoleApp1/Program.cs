@@ -63,14 +63,21 @@ namespace ConsoleApp1
                 Console.WriteLine(stringElement+"\n");
             } */
 
+            /*
             string ReverseWord(string word)
             {
+                string reversedWord;
+                char[] wordToChar = word.ToCharArray();
+                Array.Reverse(wordToChar);
+                reversedWord = new string(wordToChar);
                 
-               
+                return reversedWord;
             }
             Console.WriteLine("Molimo unesite riječ");
             string inputWord = Console.ReadLine();
-            Console.WriteLine($"Reversed: {inputWord}");
+            Console.WriteLine($"Reversed: {ReverseWord(inputWord)}");  */
+
+
 
 
 
