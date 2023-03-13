@@ -79,36 +79,47 @@ namespace ConsoleApp1
             string inputWord = Console.ReadLine();
             Console.WriteLine($"Reversed: {ReverseWord(inputWord)}");  */
 
-            Console.WriteLine("Napišite: Pravokutnik ili kvadrat?");
-            int sideA;
-            int sideB; 
 
-            string userInputGeoLik = Console.ReadLine();
+            //Area of a rectangle
+            //Console.WriteLine("Napišite: Pravokutnik ili kvadrat?");
+            //int sideA;
+            //int sideB; 
 
-            if(userInputGeoLik.ToLower() == "pravokutnik")
-            {
-                Console.WriteLine("Unesite duljinu prvog para stranica:");
-               Int32.TryParse(Console.ReadLine(), out sideA);
-                Console.WriteLine("Unesite dužinu drugog para stranica");
-               Int32.TryParse(Console.ReadLine(), out sideB);
-                Console.WriteLine($"Površina pravokutnika čije su duljine stranica a={sideA} i b={sideB} iznosi:\n{sideA*sideB}");
-            }
-            else if(userInputGeoLik.ToLower() == "kvadrat")
-            {
-                Console.WriteLine("Unesite duljinu stranica kvadrata:");
-                Int32.TryParse(Console.ReadLine(), out sideA);
-                Console.WriteLine($"Površina kvadrata duljine stranica a={sideA} iznosi:\n{sideA*sideA}");
+            //string userInputGeoLik = Console.ReadLine();
 
-            }
-            else
-            {
-                Console.WriteLine("Neispravan unos.");
-                Console.ReadLine();
-                Console.Clear();
-                Program.Main(args);
-            }
+            //if(userInputGeoLik.ToLower() == "pravokutnik")
+            //{
+            //    Console.WriteLine("Unesite duljinu prvog para stranica:");
+            //   Int32.TryParse(Console.ReadLine(), out sideA);
+            //    Console.WriteLine("Unesite dužinu drugog para stranica");
+            //   Int32.TryParse(Console.ReadLine(), out sideB);
+            //    Console.WriteLine($"Površina pravokutnika čije su duljine stranica a={sideA} i b={sideB} iznosi:\n{sideA*sideB}");
+            //}
+            //else if(userInputGeoLik.ToLower() == "kvadrat")
+            //{
+            //    Console.WriteLine("Unesite duljinu stranica kvadrata:");
+            //    Int32.TryParse(Console.ReadLine(), out sideA);
+            //    Console.WriteLine($"Površina kvadrata duljine stranica a={sideA} iznosi:\n{sideA*sideA}");
 
-
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Neispravan unos.");
+            //    Console.ReadLine();
+            //    Console.Clear();
+            //    Program.Main(args);
+            //}
+            string name;
+            int i;
+            float f;
+            bool isActive;
+            double b;
+            char z;
+            int? m; //nullable operator: ?
+            var a = 'z';
+            var d = 1;
+            String velikiString;
+            string maliString;
 
             Console.ReadLine();
         }
