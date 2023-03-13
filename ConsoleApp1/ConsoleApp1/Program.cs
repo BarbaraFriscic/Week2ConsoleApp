@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -63,8 +64,8 @@ namespace ConsoleApp1
                 Console.WriteLine(stringElement+"\n");
             } */
 
-            /*
-            string ReverseWord(string word)
+            
+            string ReverseInput(string word)
             {
                 string reversedWord;
                 char[] wordToChar = word.ToCharArray();
@@ -73,11 +74,39 @@ namespace ConsoleApp1
                 
                 return reversedWord;
             }
+            /*
             Console.WriteLine("Molimo unesite riječ");
             string inputWord = Console.ReadLine();
             Console.WriteLine($"Reversed: {ReverseWord(inputWord)}");  */
 
+            Console.WriteLine("Napišite: Pravokutnik ili kvadrat?");
+            int sideA;
+            int sideB; 
 
+            string userInputGeoLik = Console.ReadLine();
+
+            if(userInputGeoLik.ToLower() == "pravokutnik")
+            {
+                Console.WriteLine("Unesite duljinu prvog para stranica:");
+               Int32.TryParse(Console.ReadLine(), out sideA);
+                Console.WriteLine("Unesite dužinu drugog para stranica");
+               Int32.TryParse(Console.ReadLine(), out sideB);
+                Console.WriteLine($"Površina pravokutnika čije su duljine stranica a={sideA} i b={sideB} iznosi:\n{sideA*sideB}");
+            }
+            else if(userInputGeoLik.ToLower() == "kvadrat")
+            {
+                Console.WriteLine("Unesite duljinu stranica kvadrata:");
+                Int32.TryParse(Console.ReadLine(), out sideA);
+                Console.WriteLine($"Površina kvadrata duljine stranica a={sideA} iznosi:\n{sideA*sideA}");
+
+            }
+            else
+            {
+                Console.WriteLine("Neispravan unos.");
+                Console.ReadLine();
+                Console.Clear();
+                Program.Main(args);
+            }
 
 
 
