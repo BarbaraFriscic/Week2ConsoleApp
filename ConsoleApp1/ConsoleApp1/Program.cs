@@ -151,55 +151,141 @@ namespace ConsoleApp1
             // }
             //Console.WriteLine(FindNeedle(haystack_1));
 
-            Console.WriteLine("Unesite broj");
+            //Console.WriteLine("Unesite broj");
+            //try
+            //{
+            //    int userNumber = Convert.ToInt32(Console.ReadLine());
+            //    if (userNumber < 100)
+            //    {
+            //        while (userNumber <= 100 )
+            //        {
+            //            Console.WriteLine(userNumber++);
+            //        }
+            //    }
+            //    else if( userNumber > 100 ) 
+            //    {
+            //        while (userNumber >= 100 )
+            //        {
+            //            Console.WriteLine(userNumber--);
+            //        }
+            //    }
+            //    string userInput;
+            //    do
+            //    {
+            //        Console.WriteLine("Želite li ponovno igrati unesite y, za izlazak iz aplikacije unesite x.");
+            //        userInput = Console.ReadLine();
+
+            //    } while (userInput.ToLower() != "y" && userInput.ToLower() != "x");
+            //    if( userInput.ToLower() == "y")
+            //    {
+            //        Console.Clear();
+            //        Program.Main(args);
+            //    }
+            //    else if (userInput.ToLower() == "x") 
+            //    { 
+            //        Console.Clear();
+            //        Environment.Exit(0);
+            //    }                 
+            //}
+            //catch (Exception)
+            //{
+
+            //    Console.Error.WriteLine("Neispravan unos.");
+            //    Console.ReadLine();
+            //    Console.Clear();
+            //    Program.Main(args);
+            //}
+
+            void CountToZero(int number)
+            {
+                if (number > 0)
+                {
+                    while (number >= 0)
+                    {
+                        Console.WriteLine(number--);
+                    }
+                }
+                else
+                {
+                    while (number <= 0)
+                    {
+                        Console.WriteLine(number++);
+                    }
+                }
+            }
+            void CheckUserChoice(string message, out string choice)
+            {
+                do
+                { 
+                    Console.WriteLine(message);
+                    choice = Console.ReadLine();
+                } while (choice != "1" && choice != "2");
+            }
+
+            string userCountChoice;
+            int userNumber;
+            CheckUserChoice("Ako želite brojati do 1000 unesite 1. Unesite 2 za brojat do 0.", out userCountChoice);
             try
             {
-                int userNumber = Convert.ToInt32(Console.ReadLine());
-                if (userNumber < 100)
+                Console.WriteLine("Molimo unesite broj od kojega želite odbrojavati");
+                userNumber = Convert.ToInt32(Console.ReadLine());
+                if (userCountChoice == "1")
                 {
-                    while (userNumber <= 100 )
-                    {
-                        Console.WriteLine(userNumber++);
-                    }
+                    CountToThousand(userNumber);
                 }
-                else if( userNumber > 100 ) 
+                else if (userCountChoice == "2")
                 {
-                    while (userNumber >= 100 )
-                    {
-                        Console.WriteLine(userNumber--);
-                    }
+                    CountToZero(userNumber);
                 }
-                string userInput;
-                do
-                {
-                    Console.WriteLine("Želite li ponovno igrati unesite y, za izlazak iz aplikacije unesite x.");
-                    userInput = Console.ReadLine();
-
-                } while (userInput.ToLower() != "y" && userInput.ToLower() != "x");
-                if( userInput.ToLower() == "y")
+                
+                CheckUserChoice("Za novu igru unesite 1, a za izlazak 2", out userCountChoice);
+                if(userCountChoice == "1") 
                 {
                     Console.Clear();
                     Program.Main(args);
                 }
-                else if (userInput.ToLower() == "x") 
-                { 
-                    Console.Clear();
+                else if(userCountChoice == "2") 
+                {
                     Environment.Exit(0);
-                }                 
+                }
+
             }
             catch (Exception)
             {
-
                 Console.Error.WriteLine("Neispravan unos.");
                 Console.ReadLine();
                 Console.Clear();
                 Program.Main(args);
             }
-            
-            
+
+
+
+
+
 
 
             Console.ReadLine();
+        }
+        public static void CountToThousand(int number)
+        {
+            if (number > 1000)
+            {
+                while (number >= 1000)
+                {
+                    Console.WriteLine(number--);
+                }
+            }
+            else if (number == 1000)
+            {
+                Console.WriteLine(number);
+            }
+            else
+            {
+                while (number <= 1000)
+                {
+                    Console.WriteLine(number++);
+                }
+            }
         }
     }
 }
