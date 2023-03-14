@@ -13,10 +13,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string result;
-            double sqrResult;
-            int inputNum;
-            double inputNumDec;
+            //string result;
+            //double sqrResult;
+            //int inputNum;
+            //double inputNumDec;
 
             //Console.WriteLine("Unesite prirodan broj");
 
@@ -64,14 +64,14 @@ namespace ConsoleApp1
                 Console.WriteLine(stringElement+"\n");
             } */
 
-            
+
             string ReverseInput(string word)
             {
                 string reversedWord;
                 char[] wordToChar = word.ToCharArray();
                 Array.Reverse(wordToChar);
                 reversedWord = new string(wordToChar);
-                
+
                 return reversedWord;
             }
             /*
@@ -109,17 +109,17 @@ namespace ConsoleApp1
             //    Console.Clear();
             //    Program.Main(args);
             //}
-            string name;
-            int i;
-            float f;
-            bool isActive;
-            double b;
-            char z;
-            int? m; //nullable operator: ?
-            var a = 'z';
-            var d = 1;
-            String velikiString;
-            string maliString;
+            //string name;
+            //int i;
+            //float f;
+            //bool isActive;
+            //double b;
+            //char z;
+            //int? m; //nullable operator: ?
+            //var a = 'z';
+            //var d = 1;
+            //String velikiString;
+            //string maliString;
 
 
             //Day2
@@ -140,31 +140,28 @@ namespace ConsoleApp1
             string FindNeedle(object[] haystack)
             {
                 int needlePosition = -1;
-                for (int j=0; j < haystack.Length; j++)
+                for (int j = 0; j < haystack.Length; j++)
                 {
                     if (haystack[j] == null)
                     {
                         continue;
                     }
-                    if (haystack[j]== "needle")
+                    if (haystack[j] == "needle")
                     {
                         needlePosition = j;
                     }
-                }               
+                }
                 return $"Found the needle at position {needlePosition} ";
             }
 
-            string FindNeedle2(object[] haystack)
-            {
-                return $"found the needle at position {Array.IndexOf(haystack, "needle")}";
-            }
-            Console.WriteLine(FindNeedle(haystack_1));
-            Console.WriteLine(FindNeedle(haystack_2));
-            Console.WriteLine(FindNeedle(haystack_3));
 
-            Console.WriteLine(FindNeedle2(haystack_1));
-            Console.WriteLine(FindNeedle2(haystack_2));
-            Console.WriteLine(FindNeedle2(haystack_3));
+            //Console.WriteLine(FindNeedle(haystack_1));
+            //Console.WriteLine(FindNeedle(haystack_2));
+            //Console.WriteLine(FindNeedle(haystack_3));
+
+            //Console.WriteLine(FindNeedle2(haystack_1));
+            //Console.WriteLine(FindNeedle2(haystack_2));
+            //Console.WriteLine(FindNeedle2(haystack_3));
 
             //    Console.WriteLine("Unesite broj");
             //    try
@@ -272,28 +269,30 @@ namespace ConsoleApp1
             //        Console.Clear();
             //        Program.Main(args);
             //    }
-                Console.ReadLine();
-            //}
-            //public static void CountToThousand(int number)
-            //{
-            //    if (number > 1000)
-            //    {
-            //        while (number >= 1000)
-            //        {
-            //            Console.WriteLine(number--);
-            //        }
-            //    }
-            //    else if (number == 1000)
-            //    {
-            //        Console.WriteLine(number);
-            //    }
-            //    else
-            //    {
-            //        while (number <= 1000)
-            //        {
-            //            Console.WriteLine(number++);
-            //        }
-            //    }
+
+        }
+
+
+        public static void CountToThousand(int number)
+        {
+            if (number > 1000)
+            {
+                while (number >= 1000)
+                {
+                    Console.WriteLine(number--);
+                }
+            }
+            else if (number == 1000)
+            {
+                Console.WriteLine(number);
+            }
+            else
+            {
+                while (number <= 1000)
+                {
+                    Console.WriteLine(number++);
+                }
+            }
         }
     }
 }
