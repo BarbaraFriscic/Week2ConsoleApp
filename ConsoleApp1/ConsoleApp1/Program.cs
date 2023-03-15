@@ -269,7 +269,18 @@ namespace ConsoleApp1
             //        Console.Clear();
             //        Program.Main(args);
             //    }
+  //Day 3
 
+           string Bmi(double weight, double height)
+            {
+                double bmi = weight / (height * height);
+                return bmi <= 18.5 ? "Underweight" : bmi <= 25.0 ? "Normal" : bmi <= 30.0 ? "Overweight" : "Obese";
+            }
+
+
+
+
+            Console.ReadKey();
         }
 
 
