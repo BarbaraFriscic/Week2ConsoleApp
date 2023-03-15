@@ -10,5 +10,9 @@ namespace OOPBasics
     {
         public Guid Id { get; set; }
 
+        public override string GetAddress()
+        {
+            return $"{Address.City}";
+        }
     }
 }

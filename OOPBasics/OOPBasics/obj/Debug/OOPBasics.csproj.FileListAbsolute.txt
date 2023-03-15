@@ -1,0 +1,10 @@
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\bin\Debug\OOPBasics.exe.config
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\bin\Debug\OOPBasics.exe
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\bin\Debug\OOPBasics.pdb
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\obj\Debug\OOPBasics.csproj.AssemblyReference.cache
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\obj\Debug\OOPBasics.csproj.SuggestedBindingRedirects.cache
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\obj\Debug\OOPBasics.csproj.CoreCompileInputs.cache
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\obj\Debug\OOPBasics.csproj.CopyComplete
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\obj\Debug\OOPBasics.exe
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics\OOPBasics\obj\Debug\OOPBasics.pdb
