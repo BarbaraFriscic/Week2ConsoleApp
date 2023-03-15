@@ -17,7 +17,12 @@ namespace OOPBasics
 
         public override string ToString()
         {
-            return Name;
+            string listOfService = "";
+            foreach (Service service in Services) 
+            {
+                listOfService += service.ToString() + "\n";
+            }
+            return $"{Name}\nServices:\n{listOfService}";
         }
     }
 }
