@@ -10,5 +10,10 @@ namespace OOPBasics
     {
         public Guid Id { get; set; }
         public DateTime DateOfEmployment { get; set; }
+
+        public override string ToString()
+        {
+            return $"Id:{Id}\n{FirstName} {LastName}\nEmployment date: {DateOfEmployment}\nAddress: {Address}\nDOB: {DOB}\nEmail: {Email}";
+        }
     }
 }
