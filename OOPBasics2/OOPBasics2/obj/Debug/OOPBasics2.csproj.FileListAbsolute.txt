@@ -1,0 +1,8 @@
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\bin\Debug\OOPBasics2.exe.config
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\bin\Debug\OOPBasics2.exe
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\bin\Debug\OOPBasics2.pdb
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBasics2.csproj.AssemblyReference.cache
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBasics2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBasics2.csproj.CoreCompileInputs.cache
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBasics2.exe
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBasics2.pdb
