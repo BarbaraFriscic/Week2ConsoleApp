@@ -6,3 +6,10 @@ C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBa
 C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBasics2.csproj.CoreCompileInputs.cache
 C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBasics2.exe
 C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBasics2.pdb
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\bin\Debug\PdfSharp.Charting.dll
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\bin\Debug\PdfSharp.dll
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\bin\Debug\PdfSharp.xml
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\bin\Debug\PdfSharp.Charting.xml
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\Barbara\Documents\Week2ConsoleApp\OOPBasics2\OOPBasics2\obj\Debug\OOPBasics2.csproj.CopyComplete

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using PdfSharp.Pdf;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +12,48 @@ namespace OOPBasics2
 {
     internal class Program
     {
+        public static void CopyFromOneFileToAnother(string filePathCopyFrom, string filePathCopyTo)
+        {
+            try
+            {
+                using (StreamReader streamReader = new StreamReader(filePathCopyFrom))
+                {
+                    using (StreamWriter streamWriter = File.AppendText(filePathCopyTo))
+                    {
+                        streamWriter.WriteLine("ATTEMPTING TO COPY FROM ONE FILE TO ANOTHER");
+                        streamWriter.WriteLine(streamReader.ReadToEnd());
+                        
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.Error.WriteLine(ex.Message);
+            }
+        }
+        public static void CreateFile(string filePath, string inputText)
+        {
+            try
+            {
+                using (FileStream stream = new FileStream(filePath, FileMode.Open))
+                {
+                    stream.Flush();
+                    stream.Close();
+                }
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    writer.WriteLine(inputText);
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.Error.WriteLine(ex.Message);
+            }
+        }
+
         static void Main(string[] args)
         {
             //List<Employee> employeesZagreb = new List<Employee>();
@@ -72,38 +116,50 @@ namespace OOPBasics2
             //{
             //    Console.WriteLine(location.ToString() + "\n");
             //}
-
+    //Friday
 
             string folderPath = "C:\\Users\\Barbara\\Documents\\Week2ConsoleApp\\FridayDocuments";
             if(!Directory.Exists(folderPath))
             {
                 Directory.CreateDirectory(folderPath);
             }
-            string fileName = "FirstFile.txt";
-            string filePath = $"{folderPath}\\{fileName}";
-            if(!File.Exists(filePath))
+            string firstFileName = "FirstFile.txt";
+            string firstFilePath = $"{folderPath}\\{firstFileName}";
+            if(!File.Exists(firstFilePath))
             {
-                File.Create(filePath);
+                File.Create(firstFilePath);
             }
 
-            try
+            //CreateFile(firstFilePath, "This is a fourth test input into a file.");
+                     
+            //string inputString = "Hello, new line";
+            //File.AppendAllText(firstFilePath, inputString);
+
+            string secondFileName = "SecondFile.txt";
+            string secondFilePath = $"{folderPath}\\{secondFileName}";
+            if (!File.Exists(secondFilePath))
             {
-                using (FileStream stream = new FileStream(filePath, FileMode.Open))
-                {  
-                    stream.Flush();
-                    stream.Close();
-                }
-                using (StreamWriter writer = new StreamWriter(filePath))
+                File.Create(secondFilePath);
+            }
+           
+            //CopyFromOneFileToAnother(secondFilePath, firstFilePath);
+
+       //PdfSharp     
+            string pdfFileName = "FirstPdfDocument.pdf";
+            string pdfFilePath = $"{folderPath}\\{pdfFileName}";
+
+            using (MemoryStream stream = new MemoryStream())
+            {
+                using (FileStream fileStream = new FileStream(secondFilePath, FileMode.Open))
                 {
-                    writer.WriteLine("This is a first test input into a file.");
-
+                    fileStream.CopyTo(stream);
                 }
+                PdfService.GenerateNewPdfFileFromStream(pdfFilePath, stream);
             }
-            catch (Exception ex)
-            {
 
-                Console.Error.WriteLine(ex.Message);
-            }
+            //PdfService.GenerateNewPdfFileFromString(pdfFilePath, "New string in a pdf file.");
+
+
 
             Console.ReadKey();
 
